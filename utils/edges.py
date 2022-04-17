@@ -6,7 +6,6 @@ def create_edges(driver, restaurants, customers):
     edges = []
     driver_location = driver.get_user_location()
     for index in range(len(restaurants)):
-        # print(restaurants[index])
         restaurant_1_location = restaurants[index].get_restaurant_location()
         distance = math.sqrt(
             (driver_location[0] - restaurant_1_location[0]) ** 2 + (driver_location[1] - restaurant_1_location[1]) ** 2)
@@ -42,7 +41,6 @@ def create_edges(driver, restaurants, customers):
 
             edges.append((customers[index_1].name, customers[index_2].name, distance))
             edges.append((customers[index_2].name, customers[index_1].name, distance))
-    # print(edges)
     return edges
 
 
