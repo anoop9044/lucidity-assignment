@@ -1,0 +1,7 @@
+COMMANDS = [
+    "ADD_CUSTOMER",
+    "ADD_DRIVER",
+    "ADD_RESTAURANT",
+    "ADD_ORDER",
+    "DELIVER_ORDER"
+]
